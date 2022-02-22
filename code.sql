@@ -124,7 +124,7 @@ GO
 INSERT [dbo].[Transaction] ([transId], [transDate], [cardNum], [amount], [transType]) VALUES (5, CAST(N'2015-02-10' AS Date), N'3336', 6000,4)
 GO
 
-
+-- Select the info and display on terminal
 Select * from UserType
 Select * from [User]
 Select * from UserCard
