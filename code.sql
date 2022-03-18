@@ -1,3 +1,4 @@
+-- begin
 use master
 go 
 Create database ATM
@@ -5,6 +6,7 @@ go
 use ATM
 go
 
+-- creating tables
 create table [UserType](
 [userTypeId] int primary key,
 [name] varchar(20) not null
