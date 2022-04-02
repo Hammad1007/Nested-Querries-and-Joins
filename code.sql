@@ -12,6 +12,7 @@ create table [UserType](
 [name] varchar(20) not null
 )
 go
+
 create table [User](
 [userId] int primary key,
 [name] varchar(20) not null,
@@ -20,12 +21,16 @@ create table [User](
 [city] varchar(20) not null
 )
 go
+
+-- Card Type Table
 create table CardType(
 [cardTypeID] int primary key,
 [name] varchar(15),
 [description] varchar(40) null
 )
 go
+
+-- Card table
 create Table [Card](
 cardNum Varchar(20) primary key,
 cardTypeID int foreign key references  CardType([cardTypeID]),
