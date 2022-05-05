@@ -13,6 +13,7 @@ create table [UserType](
 )
 go
 
+-- user table
 create table [User](
 [userId] int primary key,
 [name] varchar(20) not null,
