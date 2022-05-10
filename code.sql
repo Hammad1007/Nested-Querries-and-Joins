@@ -1,6 +1,7 @@
 -- begin
 use master
 go 
+
 Create database ATM
 go 
 use ATM
