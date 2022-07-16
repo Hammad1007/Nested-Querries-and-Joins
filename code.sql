@@ -2,8 +2,11 @@
 use master
 go 
 
+-- creation of the database
 Create database ATM
 go 
+
+-- using the database
 use ATM
 go
 
