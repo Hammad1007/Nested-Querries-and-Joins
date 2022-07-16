@@ -45,6 +45,7 @@ balance float not null
 )
 go
 
+-- Create table User card
 Create table UserCard(
 userID int foreign key references [User]([userId]),
 cardNum varchar(20) foreign key references [Card](cardNum),
@@ -52,6 +53,7 @@ primary key(cardNum)
 )
 go
 
+-- Create table Transaction
 create table TransactionType(
 [transTypeID] int primary key,
 [typeName] varchar(15),
