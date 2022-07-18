@@ -147,11 +147,11 @@ Select * from CardType
 Select * from [Transaction]
 Select * from TransactionType
 
--- Task 1
+-- Task#1
 Select * from [Card] c
 where c.cardnum NOT IN(Select t.cardnum from [Transaction] t)
 
--- Task 2
+-- Task#2
 Select u.name from [user] u
 where userId in 
 (Select userid from UserCard join [card] c on UserCard.cardnum = c.cardNum where balance IN (select max(c1.balance) from [card] c1))
