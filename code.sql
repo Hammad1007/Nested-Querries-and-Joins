@@ -62,6 +62,7 @@ create table TransactionType(
 
 go
 
+-- table transaction
 create table [Transaction](
 transId int primary key,
 transDate date not null,
