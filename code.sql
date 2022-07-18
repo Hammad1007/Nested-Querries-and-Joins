@@ -160,7 +160,7 @@ where userId in
 Select u.name ,(Select ut.name from UserType ut where u.userId = ut.userTypeId) 
 from [User] u
 
--- Task 4
+-- Task#4
 Select *
 from [USERCARD] where cardnum IN (Select t.cardnum from [Transaction] t where transtype IN
 (Select tt.transtypeid from [TransactionType] tt where tt.typename = 'Failed')) 
