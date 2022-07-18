@@ -156,7 +156,7 @@ Select u.name from [user] u
 where userId in 
 (Select userid from UserCard join [card] c on UserCard.cardnum = c.cardNum where balance IN (select max(c1.balance) from [card] c1))
 
--- Task 3
+-- Task#3
 Select u.name ,(Select ut.name from UserType ut where u.userId = ut.userTypeId) 
 from [User] u
 
