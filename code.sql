@@ -166,7 +166,7 @@ Select *
 from [USERCARD] where cardnum IN (Select t.cardnum from [Transaction] t where transtype IN
 (Select tt.transtypeid from [TransactionType] tt where tt.typename = 'Failed')) 
 
--- Task 5
+-- Task#5
 Select uc.userid from [usercard] uc
 where uc.cardnum IN 
 (Select c.cardnum from [card] c where c.cardnum IN 
